@@ -39,7 +39,6 @@ namespace ConferenceTracker
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddTransient<IPresentationRepository, PresentationRepository>();
